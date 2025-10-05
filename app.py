@@ -35,5 +35,4 @@ if st.button("🎯 Predict Performance"):
                           Study_Time, Sleep_Hours, Assignments_Submitted,
                           School_Type_enc]])
     prediction = model.predict(features)[0]
-    st.success(f"Predicted Final Grade: {prediction *10:.2f}")
-    st.info("Pass ✅" if prediction >= 50 else "Fail ❌")
+    st.success(f"Predicted Final Grade: {prediction *10:.2f} %")
